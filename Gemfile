@@ -10,6 +10,7 @@ gem 'rails', '4.1.4'
 
 # gem "pg", :group => :production
 gem "sqlite3-ruby", :group => :development
+gem "pg", :group => :production
 gem 'rails_12factor', :group => :production
 gem 'rspec-rails', '~> 3.0.0', group: [:development, :test]
 # Use SCSS for stylesheets
