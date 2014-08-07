@@ -11,6 +11,8 @@ class TranscriptionsController < ApplicationController
   # GET /transcriptions/1
   # GET /transcriptions/1.json
   def show
+     @comments = @transcription.comments.all
+  @comment = @transcription.comments.build
   end
 
   # GET /transcriptions/new
@@ -73,3 +75,4 @@ class TranscriptionsController < ApplicationController
       params.require(:transcription).permit(:user_name, :description, :picture, :transcription)
     end
 end
+
